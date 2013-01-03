@@ -1,0 +1,44 @@
+export PS1='\[\033[1;31m\]\h@\w\$ \[\033[0m\]'
+export CLICOLOR=1
+export LSCOLORS=gxfxcxdxbxegedabagacad
+##
+# Your previous /Users/daiki-peach0226/.bash_profile file was backed up as /Users/daiki-peach0226/.bash_profile.macports-saved_2011-07-20_at_15:26:36
+##
+
+# MacPorts Installer addition on 2011-07-20_at_15:26:36: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+##android sdk path
+export PATH=~/Documents/android/android-sdk-mac_x86/tools:~/Documents/android/android-sdk-mac_x86/platform-tools:$PATH
+
+#set up easytether
+EASYTETHER_EXT=/System/Library/Extensions/EasyTetherUSBEthernet.kext
+alias easytether-on="sudo kextload $EASYTETHER_EXT"
+alias easytether-off="sudo kextunload $EASYTETHER_EXT"
+alias easytether-status="kextstat |grep EasyTether"
+
+##
+# Your previous /Users/zwirky/.bash_profile file was backed up as /Users/zwirky/.bash_profile.macports-saved_2012-10-25_at_15:56:45
+##
+
+# MacPorts Installer addition on 2012-10-25_at_15:56:45: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+#proxy setting
+#if [ -e /usr/sbin/scselect ]
+#then
+#    if [ "`scselect | grep \*.*semi`" ]
+#    then
+#        export http_proxy=proxy.gra.kutc.kansai-u.ac.jp:8080
+#        export https_proxy=proxy.gra.kutc.kansai-u.ac.jp:8080
+#        export ftp_proxy=proxy.gra.kutc.kansai-u.ac.jp
+#    fi
+#fi
+
+#convenience setting
+alias ll="ls -l"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gp="git push"

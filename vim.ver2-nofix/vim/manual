@@ -1,0 +1,12 @@
+commentout.vim
+[ソースをコメントアウト/解除する]
+
+
+VisualModeで範囲選択，
+,/ コメントアウト
+,c コメントアウト解除
+
+
+参考サイト：http://nanasi.jp/articles/vim/commentout_source.html
+
+
